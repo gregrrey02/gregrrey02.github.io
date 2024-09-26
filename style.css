@@ -1,0 +1,47 @@
+body {
+    font-family: Arial;
+    font-size: 12pt;
+    background-color: #d8f3f7;
+    margin: 12pt;
+}
+
+h1 {
+    font-family: 'Verdana', sans-serif;
+    color:#2c4062;
+}
+
+h2 {
+    font-family: 'Tahoma', sans-serif;
+    color:#62352c;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color:#2c623e;
+}
+
+p, ol, ul {
+    
+}
+
+a:visited, a:link {
+    font-family:'Gill Sans MT', sans-serif;
+    color: #414242;
+}
+
+a:hover {
+    font-family:'Gill Sans MT', sans-serif;
+    color: #ca7258;
+}
+
+a:active {
+    font-family: 'Gill Sans MT', sans-serif;
+    color: #58c8ca;
+}
+
+table, th, td{
+    border:1px solid;
+    font-family:'Gill Sans MT', sans-serif;
+}
+
+
