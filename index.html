@@ -7,14 +7,37 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
     </head>
+    <nav>
+        <ol>
+            <li><a href="#About Me">About Me</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Curriculars">Extra Curriculars</a></li>
+            <li><a href="https://www.torontomu.ca/">University</a></li>
+            <li><a href="https://www.linkedin.com/in/jan-gregor-reyes-8aa689329/">LinkedIn</a></li>
+        </ol>
+        </nav>
     <body>
+        
         <h1>Greg Reyes</h1>
-        <h2>About Me</h2>
+        <h2 id="About Me">About Me</h2>
+        <button onclick="reset()">Click to reset image</button>
+    <div id="img1">
+        <img onclick="imgButton()" 
+        src="g_banff.jpg"  
+        width="400" height="300">
+    </div>
         <p>I'm a 21 year old Filipino studying Business Technology Management at Toronto Metropolitan University. My hobbies are playing video games, playing piano, and listening to music.
-             I'm currently working at a pizzeria part time. </p>
+             I'm currently working at a pizzeria part time. </p>     
+    <div class="n_button">
+        <button onclick="nameButton()">What's your name?</button>
+        <p id="b_output"></p>
+    </div>
+
+
         <hr>
-        <h2>Education</h2>
+        <h2 id="Education">Education</h2>
         <ol>
             <li>Saint Thomas Aquinas Elementary School</li>
             <li>Marshall McLuhan Secondary School</li>
@@ -57,7 +80,7 @@
         </table>
         </div>
         <hr>
-        <h2>Extra Curriculars</h2>
+        <h2 id="Curriculars">Extra Curriculars</h2>
             <ul>
                 <li>Highschool: Ultimate Frisbee Team</li>
                 <li>TMU Gaming Club</li>
@@ -76,4 +99,5 @@
         <br>
         <a href="https://www.youtube.com/watch?v=SrZYP8SzlN8">This is a song I like</a>
     </body>
+    
 </html>
