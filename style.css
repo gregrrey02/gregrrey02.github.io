@@ -1,67 +1,107 @@
 body {
-    font-family: Arial;
-    font-size: 12pt;
-    background-color: #d8f3f7;
-    margin:12pt;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-family: 'calibri', sans-serif;
+    font-size: 13pt;
+    background-color: #d9f1f7;
+    margin:0px;
+}
+
+*{
+    text-decoration: none;
 }
 
 h1 {
-    font-family: 'Verdana', sans-serif;
-    color:#2c4062;
+    color:rgb(25, 37, 51);
+    margin-left: 10pt;
 }
 
 h2 {
-    font-family: 'Tahoma', sans-serif;
-    color:#62352c;
+    color:rgb(39, 47, 65);
+    margin-left: 10pt;
 }
 
 h3 {
-    font-family: 'Trebuchet MS', sans-serif;
-    color:#2c623e;
+    color:#3f3f50;
+    margin-left: 10pt;
 }
 
 p, ol, ul {
-    font-family:'Gill Sans MT', sans-serif;
-}
-
-a:visited, a:link a:hover a:active{
-    font-family:'Gill Sans MT', sans-serif;
-    color: #d6d8d8;
-}
-
-table, th, td{
-    border:1px solid;
-    font-family:'Gill Sans MT', sans-serif;
+    margin-left: 10pt;
 }
 
 button{
-    background-color: #f0caca;
+    background-color: #61b4ce;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left:10pt;
 }
 
 img{
-    margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 10pt;
 }
 
-nav{
-    background-color: #2c4062;
-    width:100%;
-    height:55px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 0px;
+.navBar{
+    background:#2c4062; 
+    font-family: 'Tahoma', sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-nav ol{
-    display: block;
+.navDiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav li{
+.logo a{
+    font-size: 32px;
+    color: white;
+}
+
+.navDiv li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navDiv li a{
+    color: white;
     font-size: 20px;
-    list-style-type: none;
-    display: inline;
-    padding-right: 20px;
+    margin-right: 25px;
 }
 
+table, td, th {  
+    border: 2px solid #2a293f;
+    text-align: middle;
+    margin-left: 10px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    text-align: middle;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+
+  #education input{
+    margin-left: 15px;
+  }
+
+  #websites input{
+    margin-left: 15px;
+  }
+
+  #myform textarea{
+    margin-left: 10px;
+  }
+
+  #submit{
+    margin-left: 10px;
+    margin-bottom:8px;
+  }
