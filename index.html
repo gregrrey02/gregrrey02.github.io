@@ -10,30 +10,29 @@
         <script src="main.js"></script>
     </head>
     <body>
+        <!-- Navigation bar -->
         <nav class="navBar">
             <div class="navDiv">
                 <div class="logo"><a href="#">Greg Reyes</a></div>
                 <ul>
                     <li><a href="#About Me">About Me</a></li>
                     <li><a href="#Education">School Experience</a></li>
-                    <li><a href="#myform">Form</a></li>
+                    <li><a href="#surveyForm">Form</a></li>
                     <li><a href="https://www.torontomu.ca/">University</a></li>
                     <li><a href="https://www.linkedin.com/in/jan-gregor-reyes-8aa689329/">LinkedIn</a></li>
                 </ul>
             </div>
             </nav>
         <h2 id="About Me">About Me</h2>
-        
-    <div id="img1">
-        <img onclick="imgButton()" 
-        src="g_banff.jpg"  
-        width="400" height="300">
-    </div>
-    <button onclick="reset()">Click to reset image</button>
-        <p>I'm a 21 year old Filipino studying Business Technology Management at Toronto Metropolitan University. My hobbies are playing video games, playing piano, and listening to music.
-             I'm currently working at a pizzeria part time. </p>     
+        <!-- clickable image that enlarges -->
+        <img src="g_banff.jpg" alt="Clickable Image" class="clickable-image" id="enlargeImage">
+
+        <p id="aboutMe-p">I'm a 21 year old Filipino studying Business Technology Management at Toronto Metropolitan University. My hobbies are playing video games, playing piano, and listening to music.
+             I'm currently working at a pizzeria part time. </p>
+        <!-- added id to style in CSS -->
 
         <hr>
+        <!-- all educucation experience -->
         <h2 id="Education">Education</h2>
         <ol>
             <li>Saint Thomas Aquinas Elementary School</li>
@@ -55,6 +54,7 @@
             <li>ITM415: Business Process Management</li>
             <li>ITM820: Information Systems Security and Privacy</li>
         </ul>
+        <!-- table -->
         <h3>Favourite Electives</h3>
         <div class="table">
         <table>
@@ -64,15 +64,15 @@
             </tr>
             <tr>
                 <td>POL128</td>
-                <td>Politics and Film</td>
+                <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/politics-and-public-administration/POL/128/">Politics and Film</a></td>
             </tr>
             <tr>
                 <td>PCS181</td>
-                <td>Introduction to Astronomy</td>
+                <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/physics/PCS/181/">Introduction to Astronomy</a></td>
             </tr>
             <tr>
                 <td>ITM795</td>
-                <td>Social Media Analytics</td>
+                <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/795/">Social Media Analytics</a></td>
             </tr>
         </table>
         </div>
@@ -89,51 +89,52 @@
             <li>TMU SQL Bootcamp</li>
         </ul>
         <hr>
-        <h2>Form</h2>
-        <form id="myform">
-            <p>Name
-                <br>
-            <input id="username" type="text">
-            </p>
-            <p>Age
-                <br>
-            <input id="age" type="number">
-            </p>
-            <p>Email
-                <br>
-                <input id="email" type="text">
-                </p>
-            <div class="education">
-                <p>What is your highest level of education?<br>
-                    <input type="radio" id="degree1" name="edu" value="Highschool">
-                    <label for="degree1">Highschool degree</label><br>
-                    <input type="radio" id="degree2" name="edu" value="Undergrad">
-                    <label for="degree2"> Undergraduate degree (Bachelors, associate, etc.)</label><br>
-                    <input type="radio" id="degree3" name="edu" value="Graduate">
-                    <label for="degree3">Graduate degree (PhD, Masters, etc.)</label><br>
-                </p>
-            </div>
-            <div class="websites">
-                <p>What hiring websites do you use?<br>
-                    <input type="checkbox" id="website1" name="web" value="linkedin">
-                    <label for="website1">LinkedIn</label><br>
-                    <input type="checkbox" id="website2" name="web" value="indeed">
-                    <label for="website2"> Indeed</label><br>
-                    <input type="checkbox" id="website3" name="web" value="glassdoor">
-                    <label for="website3">Glassdoor</label><br>
-                    <input type="checkbox" id="website4" name="web" value="other">
-                    <label for="website4">Other</label><br>
-                </p>
-            </div>
-            <p>How many years of hiring experience do you have?
-                <input id="years" type="number" name="hiringYears" maxlength="2" size="2">
-            </p>
-                <p><label for="w3review">Povide feedback for my website:</label></p>
-                <textarea id="w3review" name="w3review" rows="4" cols="50">Type here...</textarea>
-            </p>
-            <input id="submit" type="submit" value="Submit">
-            <input id="reset" type="reset">
-            </form>
-    </body>
-    
+        <h2 id="formh2">Form</h2>
+<!-- survey form -->
+    <form id="surveyForm">
+        <!-- for name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <!-- for age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br><br>
+        <!-- highest level of education (radio) -->
+        <p>Highest Level of Education:</p>
+        <input type="radio" id="highschool" name="education" value="High School" required>
+        <label for="highschool">High School</label><br>
+        <input type="radio" id="undergraduate" name="education" value="Undergraduate Degree" required>
+        <label for="undergraduate">Undergraduate Degree</label><br>
+        <input type="radio" id="graduate" name="education" value="Graduate" required>
+        <label for="graduate">Graduate</label>
+        <br><br>
+        <!-- hiring websites used (checkbox) -->
+        <p>What hiring websites do you use? (Select all that apply)</p>
+        <input type="checkbox" id="linkedin" name="hiringWebsites" value="LinkedIn">
+        <label for="linkedin">LinkedIn</label><br>
+        <input type="checkbox" id="indeed" name="hiringWebsites" value="Indeed">
+        <label for="indeed">Indeed</label><br>
+        <input type="checkbox" id="glassdoor" name="hiringWebsites" value="Glassdoor">
+        <label for="glassdoor">Glassdoor</label><br>
+        <input type="checkbox" id="other" name="hiringWebsites" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+        <!-- years of experience -->
+        <label for="experience">Years of Hiring Experience:</label>
+        <input type="number" id="experience" name="experience" required>
+        <br><br>
+        <!-- feedback prompt (text area) -->
+        <label for="feedback">Please provide feedback for my website:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+        <br><br>
+        <!-- control buttons for submitting -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <!-- footer -->
+    <footer>
+        <p>© Greg Reyes | <a href="#top">Back to Top</a></p>
+    </footer>
+    </body> 
 </html>

@@ -1,19 +1,31 @@
 
-function imgButton(){
-    var img = document.getElementById("img1");
-    img.style.transform="scale(1.5) translate(30%,20%)";
-    img.style.transition="transform 0.2s ease";
-}
-function reset(){
-    var img = document.getElementById("img1");
-    img.style.transform = "scale(1)";
-    img.style.transition = "transform 0.2s ease";
-}
+document.addEventListener("DOMContentLoaded", function() {
+  // get the id of the image
+  const image = document.getElementById('enlargeImage');
 
-var submitButton = document.getElementById('submit')
-submitButton.onclick = saveData;
+  // click event listener for enlarging image
+  image.addEventListener('click', () => {
+      image.classList.toggle('enlarged');
+  });
+});
 
-function saveData(){
-  var input = document.getElementById("myform");
-  localStorage.setItem("myform", input.value);
-}
+// form event listener for the buttons
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("surveyForm");
+
+  form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      // each item on the survey
+      const formData = {
+          name: document.getElementById("name").value,
+          age: document.getElementById("age").value,
+          education: document.querySelector('input[name="education"]:checked').value,
+          hiringWebsites: Array.from(document.querySelectorAll('input[name="hiringWebsites"]:checked')).map(el => el.value),
+          experience: document.getElementById("experience").value,
+          feedback: document.getElementById("feedback").value,
+      };
+      // stores survey answers into local storage
+      localStorage.setItem("surveyFormData", JSON.stringify(formData));
+      alert("Form data saved to local storage!");
+  });
+});
