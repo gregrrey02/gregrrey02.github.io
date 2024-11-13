@@ -1,0 +1,38 @@
+/* body styling */
+body{
+  padding: 5px;
+  font-family: sans-serif;
+  font-size: 18px;
+  background-color: #8f8f8f;
+}
+
+/* hide default controls */
+#songPlayer{
+    display: none;
+  }
+  
+/* button styling */
+button{
+  padding: 10px;
+  margin: 5px;
+  background-color: #4c6baf;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+}
+button:hover{
+  background-color: #9199ca;
+}
+
+/* slider styling for song seeker*/
+input[type="range"]{
+  width: 200px;
+  cursor: pointer;
+}
+
+/* make images and captions on the same line */
+.images{
+  display: flex;
+  justify-content: flex-start;
+}

@@ -4,13 +4,54 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Greg - Lab 8</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">       
     </head>
     <body>
-        <p>hello world</p>
-        <script src=""></script>
+        <h1>Greg Reyes - Lab 8</h1>
+        <h3>Radiohead - True Love Waits</h3>
+        <!-- audio controls -->
+        <div class="songControls">
+            <button id="playButton">Play</button>
+            <button id="pauseButton">Pause</button>
+            <input type="range" id="seekSlider" value="0" max="100">
+            <button id="volumeDown">-</button>
+            <button id="volumeUp">+</button>
+        </div>    
+        <!-- audio player of song -->
+        <audio id="songPlayer" src="https://ia601702.us.archive.org/22/items/02-daydreaming/11-true_love_waits.mp3">
+        </audio>
+        <p>Internet Archive. (n.d.). True Love Waits. [Audio]. Internet Archive. Retrieved November 13, 2024, from 
+            <a href="https://archive.org/details/02-daydreaming/11-true_love_waits.mp3">https://archive.org/details/02-daydreaming/11-true_love_waits.mp3</a>
+        </p>
+        <!-- text size accessibility -->
+        <h3>Text Size Button</h3>
+            <button id="enlargeText">Enlarge text</button>
+        <!-- color accessibility -->
+        <h3>Color Changer</h3>
+            <button id="changeColour">Change background colour</button>
+        <!-- image accessibility -->
+         <h3>Images</h3>
+            <div class="images">
+                <figure>
+                    <img src="moon1.jpg" style="width:250px" alt="This is an image of a full moon">
+                    <figcaption>Taken in front of my house on November 28, 2023</figcaption>
+                    <button onclick="showAlt(this)">Show alt text</button>
+                </figure>
+                <figure>
+                    <img src="moon2.jpg" style="width:250px"  alt="This is an image of a half moon">
+                    <figcaption>Taken in front of my house on July 7, 2022</figcaption>
+                    <button onclick="showAlt(this)">Show alt text</button>
+                </figure>
+                <figure>
+                    <img src="moon3.jpg" style="width:250px"  alt="This is an image of a quarter moon">
+                    <figcaption>Taken in front of my house on August 2, 2022</figcaption>
+                    <button onclick="showAlt(this)">Show alt text</button>
+                </figure>
+            </div>
+        <!-- js file -->
+        <script src="main.js"></script>
+
     </body>
 </html>
