@@ -76,3 +76,8 @@ function showAlt(button) {
   // shows the alt text in an alert
   alert(altText);
 }
+
+document.getElementById("tmuClick").addEventListener("click", function() {
+  // Display the alt text of the image
+  alert("Alt text: " + this.alt);
+});

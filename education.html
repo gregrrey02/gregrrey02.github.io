@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Greg - Education</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navBar">
+            <div class="navDiv">
+                <div class="logo"><a href="index.html">Greg Reyes</a></div>
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/jan-gregor-reyes-8aa689329/" target="_blank">LinkedIn</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+    <main>
+        <h1>Education</h1>
+            <figure style="float: right; margin-top: 50px;">
+                <img src="tmu.jpg" alt="photo of TMU campus" class="tmu-clickable" id="tmuClick">
+                <script>
+                document.getElementById("tmuClick").addEventListener("click", function() {
+                    // Display the alt text of the image
+                    alert("Alt text: " + this.alt);
+                  });
+                </script>
+                <figcaption style="font-size: 11px;">This is a photo of my University campus</figcaption>
+            </figure>
+            <div class="education-item">
+              <h3>Saint Thomas Aquinas Elementary School</h3>
+              <p>Completed foundational education.</p>
+            </div>
+            <div class="education-item">
+              <h3>Marshall McLuhan Secondary School</h3>
+              <p>Graduated high school with a focus on general education.</p>
+            </div>
+            <div class="education-item">
+              <h3>Toronto Metropolitan University</h3>
+              
+              <h4>Computer Science (2020-2021)</h4>
+              <p>Studied core concepts in computing and programming. Some relevant courses:</p>
+              <ul>
+                <li><strong>CPS109:</strong> Introduction to Python</li>
+                <li><strong>MTH110:</strong> Discrete Mathematics I</li>
+                <li><strong>CPS213:</strong> Computer Organization</li>
+            </ul>
+            </div>
+            <div class="education-item">
+              <h4>Business Technology Management (2021 - Present)</h4>
+              <p>Focusing on integrating technology with business practices. Some relevant courses:</p>
+              <ul>
+                <li><strong>ITM200:</strong> Fundamentals of Programming</li>
+                <li><strong>ITM415:</strong> Business Process Management</li>
+                <li><strong>ITM820:</strong> Information Systems Security and Privacy</li>
+            </ul>
+            </div>
+        <h3 id="Curriculars">Extra Curriculars</h3>
+            <ul>
+                <li>Highschool: Ultimate Frisbee Team</li>
+                <li>TMU Gaming Club</li>
+            </ul>
+        <h3>Certificates</h3>
+        <p>Planning on taking:</p>
+        <ul>
+            <li>TMU Power of Excel Bootcamp</li>
+            <li>TMU Power BI Bootcamp</li>
+            <li>TMU SQL Bootcamp</li>
+        </ul>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>© Greg Reyes | <a href="#top">Back to Top</a></p>
+    </footer>
+    </body> 
+</html>

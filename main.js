@@ -18,14 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
       // each item on the survey
       const formData = {
           name: document.getElementById("name").value,
-          age: document.getElementById("age").value,
-          education: document.querySelector('input[name="education"]:checked').value,
-          hiringWebsites: Array.from(document.querySelectorAll('input[name="hiringWebsites"]:checked')).map(el => el.value),
-          experience: document.getElementById("experience").value,
-          feedback: document.getElementById("feedback").value,
+          age: document.getElementById("phone").value,
+          email: document.getElementById("email").value,
+          education: document.querySelector('input[name="purpose"]:checked').value,
+          message: document.getElementById("message").value,
       };
       // stores survey answers into local storage
       localStorage.setItem("surveyFormData", JSON.stringify(formData));
-      alert("Form data saved to local storage!");
+      alert("Sent, thank you!");
   });
+});
+
+document.getElementById("tmuClick").addEventListener("click", function() {
+  // Display the alt text of the image
+  alert("Alt text: " + this.alt);
 });

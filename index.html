@@ -13,125 +13,57 @@
         <!-- Navigation bar -->
         <nav class="navBar">
             <div class="navDiv">
-                <div class="logo"><a href="#">Greg Reyes</a></div>
+                <div class="logo"><a href="index.html">Greg Reyes</a></div>
                 <ul>
-                    <li><a href="#About Me">About Me</a></li>
-                    <li><a href="#Education">School Experience</a></li>
-                    <li><a href="#surveyForm">Form</a></li>
-                    <li><a href="https://www.torontomu.ca/">University</a></li>
-                    <li><a href="https://www.linkedin.com/in/jan-gregor-reyes-8aa689329/">LinkedIn</a></li>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/jan-gregor-reyes-8aa689329/" target="_blank">LinkedIn</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             </nav>
-        <h2 id="About Me">About Me</h2>
+    <main>
+        <h1 id="About Me" style="text-align: center;">About Me</h1>
         <!-- clickable image that enlarges -->
-        <img src="g_banff.jpg" alt="Clickable Image" class="clickable-image" id="enlargeImage">
+        <img src="g_image.jpg" alt="Clickable Image" class="clickable-image" id="enlargeImage">
 
-        <p id="aboutMe-p">I'm a 21 year old Filipino studying Business Technology Management at Toronto Metropolitan University. My hobbies are playing video games, playing piano, and listening to music.
-             I'm currently working at a pizzeria part time. </p>
+        <p id="aboutMe-p" style="font-size: 30px;">My name is Greg Reyes. I'm a 21 year old Filipino studying Business Technology Management at Toronto Metropolitan University. </p>
         <!-- added id to style in CSS -->
-
-        <hr>
-        <!-- all educucation experience -->
-        <h2 id="Education">Education</h2>
-        <ol>
-            <li>Saint Thomas Aquinas Elementary School</li>
-            <li>Marshall McLuhan Secondary School</li>
-            <li>Toronto Metropolitan University - Computer Science (2020-2021)</li>
-            <li>Toronto Metropolitan University - Business Technology (Management 2021 - Present)</li>
-        </ol>
-        <h3>Computer Science</h3>
-        <p>Some courses I took were:</p>
-        <ul>
-            <li>CPS109: Introduction to Python</li>
-            <li>MTH110: Discrete Mathematics I</li>
-            <li>CPS213: Computer Organization</li>
-        </ul>
-        <h3>Business Technology Management</h3>
-        <p>Some of my favourite core courses were:</p>
-        <ul>
-            <li>ITM200: Fundamentals of Programming</li>
-            <li>ITM415: Business Process Management</li>
-            <li>ITM820: Information Systems Security and Privacy</li>
-        </ul>
-        <!-- table -->
-        <h3>Favourite Electives</h3>
+         <h2>Skills</h2>
         <div class="table">
-        <table>
-            <tr>
-                <th>Class Code</th>
-                <th>Class Name</th>
-            </tr>
-            <tr>
-                <td>POL128</td>
-                <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/politics-and-public-administration/POL/128/">Politics and Film</a></td>
-            </tr>
-            <tr>
-                <td>PCS181</td>
-                <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/physics/PCS/181/">Introduction to Astronomy</a></td>
-            </tr>
-            <tr>
-                <td>ITM795</td>
-                <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/795/">Social Media Analytics</a></td>
-            </tr>
-        </table>
-        </div>
-        <h3 id="Curriculars">Extra Curriculars</h3>
-            <ul>
-                <li>Highschool: Ultimate Frisbee Team</li>
-                <li>TMU Gaming Club</li>
-            </ul>
-        <h3>Certificates</h3>
-        <p>Planning on taking:</p>
-        <ul>
-            <li>TMU Power of Excel Bootcamp</li>
-            <li>TMU Power BI Bootcamp</li>
-            <li>TMU SQL Bootcamp</li>
-        </ul>
-        <hr>
-        <h2 id="formh2">Form</h2>
-<!-- survey form -->
-    <form id="surveyForm">
-        <!-- for name -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br><br>
-        <!-- for age -->
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required>
-        <br><br>
-        <!-- highest level of education (radio) -->
-        <p>Highest Level of Education:</p>
-        <input type="radio" id="highschool" name="education" value="High School" required>
-        <label for="highschool">High School</label><br>
-        <input type="radio" id="undergraduate" name="education" value="Undergraduate Degree" required>
-        <label for="undergraduate">Undergraduate Degree</label><br>
-        <input type="radio" id="graduate" name="education" value="Graduate" required>
-        <label for="graduate">Graduate</label>
-        <br><br>
-        <!-- hiring websites used (checkbox) -->
-        <p>What hiring websites do you use? (Select all that apply)</p>
-        <input type="checkbox" id="linkedin" name="hiringWebsites" value="LinkedIn">
-        <label for="linkedin">LinkedIn</label><br>
-        <input type="checkbox" id="indeed" name="hiringWebsites" value="Indeed">
-        <label for="indeed">Indeed</label><br>
-        <input type="checkbox" id="glassdoor" name="hiringWebsites" value="Glassdoor">
-        <label for="glassdoor">Glassdoor</label><br>
-        <input type="checkbox" id="other" name="hiringWebsites" value="Other">
-        <label for="other">Other</label>
-        <br><br>
-        <!-- years of experience -->
-        <label for="experience">Years of Hiring Experience:</label>
-        <input type="number" id="experience" name="experience" required>
-        <br><br>
-        <!-- feedback prompt (text area) -->
-        <label for="feedback">Please provide feedback for my website:</label>
-        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
-        <br><br>
-        <!-- control buttons for submitting -->
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </form>
+            <table>
+                <tr>
+                    <td>Programming in Python</td>
+                </tr>
+                <tr>
+                    <td>Web development</td>
+                </tr>
+                <tr>
+                    <td>Database basics (SQL)</td>
+                </tr>
+                <tr>
+                    <td>Networking</td>
+                </tr>
+                <tr>
+                    <td>Project management</td>
+                </tr>
+                <tr>
+                    <td>Communication</td>
+                </tr>
+                <tr>
+                    <td>Team collaboration</td>
+                </tr>
+                <tr>
+                    <td>Adaptability</td>
+                </tr>
+                <tr>
+                    <td>Problem-solving</td>
+                </tr>
+
+            </table>
+            </div>   
+</main>
     <!-- footer -->
     <footer>
         <p>© Greg Reyes | <a href="#top">Back to Top</a></p>
